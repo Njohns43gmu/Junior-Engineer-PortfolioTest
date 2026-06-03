@@ -1,0 +1,22 @@
+# --- Credentials ---
+# Never commit the .env file. It contains database passwords.
+# Each environment (local machine, staging server, production server)
+# has its own .env with its own credentials.
+.env
+
+# --- Python virtual environment ---
+# The env/ folder contains installed packages for this project.
+# It is machine-specific and can be recreated with:
+#   python -m venv env && pip install -r requirements.txt
+env/
+
+# --- PyInstaller build output ---
+# These are generated artefacts — they can be rebuilt from source
+# and should not be tracked in version control.
+build/
+dist/
+*.spec.bak
+
+# --- Python cache files ---
+__pycache__/
+*.pyc
