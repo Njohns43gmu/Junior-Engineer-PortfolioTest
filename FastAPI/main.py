@@ -7,7 +7,7 @@ import models, schemas, crud
 from database import engine, get_db
 import os, sys
 
-models.Base.metadata.create_all(bind=engine)
+models.Base.metadata.create_all(bind=engine, checkfirst=True)
 
 app = FastAPI()
 
